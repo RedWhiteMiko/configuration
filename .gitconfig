@@ -5,6 +5,9 @@
 [core]
   excludefile = ~/.gitignore_global
 
+[push]
+  default = current
+
 [color]
   ui = true
 

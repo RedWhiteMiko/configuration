@@ -10,8 +10,6 @@ cp ./.gitignore_global ~/
 cp ./.tmux.conf ~/
 
 cp ./git-completion.bash ~/scripts/
+cp ./git-prompt.bash ~/scripts/
 
-
-echo "source ${HOME}/scripts/git-completion.bash" >> ~/.bash_profile
-echo "export GITAWAREPROMPT=${HOME}/scripts/git-aware-prompt" >> ~/.bash_profile
-echo "source ${HOME}/scripts/git-aware-prompt/main.sh"  >> ~/.bash_profile
+echo $(cat startup.sh) > ~/.bashrc
